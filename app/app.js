@@ -1,5 +1,21 @@
-var  myNinjaApp=angular.module('myNinjaApp',[]);
+var  myNinjaApp=angular.module('myNinjaApp',['ngRoute']);
+myNinjaApp.config(['$routeProvider',function($routerProvider){
+    $routerProvider
+    .when('/home',{
+        templateUrl:'../views/home.html',
+        controller:'NinjaController'
+    })
+    .when('/directory',{
+        templateUrl:'../views/directory.html',
+        controller:'NinjaController'
+    })
+    .otherwise({
+        redirectTo:'/home'
+    });
 
+
+}
+]);
 //To protect the variable from manification we do like this  ways
 
 myNinjaApp.controller('NinjaController',['$scope',function($scope){
