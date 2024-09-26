@@ -118,3 +118,69 @@ body{
     cursor: pointer;
     margin-left: 10px;
   }
+  
+  .ninja-item {
+    list-style-type: none; /* Remove bullet points */
+    margin: 10px 0; /* Spacing between items */
+    padding: 15px; /* Increased padding for better touch area */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between content */
+    background-color: #f9f9f9; /* Light background */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.ninja-item:hover {
+    background-color: #eaeaea; /* Darker background on hover */
+}
+
+.ninja-content {
+    display: flex; /* Flexbox for content */
+    align-items: center; /* Align items vertically */
+    flex: 1; /* Allow the content to grow */
+}
+
+.ninja-image {
+    margin-right: 15px; /* Increased space between image and text */
+    width: 90px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.ninja-details {
+    flex: 1; /* Allow details to grow */
+}
+
+.ninja-name {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Increase font size for better visibility */
+    font-weight: bold; /* Make name bold */
+    color: #333; /* Darker text color for better readability */
+}
+
+.belt {
+    padding: 5px 10px; /* Padding for the belt */
+    color: #fff; /* Text color */
+    border-radius: 3px; /* Rounded corners for the belt */
+    font-weight: bold; /* Bold text for emphasis */
+    text-transform: capitalize; /* Capitalize belt names */
+}
+
+.remove {
+    cursor: pointer; /* Pointer cursor for click */
+    color: red; /* Color for the remove button */
+    font-weight: bold; /* Bold text */
+    padding: 5px 10px; /* Padding for remove button */
+    border-radius: 3px; /* Rounded corners for the remove button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.remove:hover {
+    background-color: #ffe6e6; /* Light red background on hover */
+}
+
+
+  
